@@ -1,0 +1,15 @@
+We would be creating a Fancy Sole Website today. 
+
+
+1. Structure out our components 
+2. Import react router dom for our linking. 
+3. Navigate and link all routes. 
+
+
+//<----------NAVBAR COMPONENT--------> 
+4. Create the Navbar component and link to pages. 
+5. Install npm install --save styled-components to 
+6.  https://styled-components.com/ directly style tags to use on pages. 
+
+
+rem vs picels 
