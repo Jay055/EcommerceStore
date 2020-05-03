@@ -9,7 +9,14 @@ We would be creating a Fancy Sole Website today.
 //<----------NAVBAR COMPONENT--------> 
 4. Create the Navbar component and link to pages. 
 5. Install npm install --save styled-components to 
-6.  https://styled-components.com/ directly style tags to use on pages. 
+6. Style components another way to style components.
+7.  https://styled-components.com/ directly style tags to use on pages. 
+8. Create Pages 
+
+// Create our Context API 
+1. We would be using context to store all our data. 
+2.  Create context.js 
+3. We would need to place our provider on the top of all tags in the <index.js> file so other children can read it's data. 
 
 
-rem vs picels 
+
