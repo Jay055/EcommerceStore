@@ -19,4 +19,42 @@ We would be creating a Fancy Sole Website today.
 3. We would need to place our provider on the top of all tags in the <index.js> file so other children can read it's data. 
 
 
+//<--------------- Products ----------------> 
+1. Get Props from product list 
+2. Destructure needed properties. 
 
+//<-----------Toggle Button ------------> 
+
+3.Create Prop Types to Handle errors associated with mismatch
+
+4.  Create A Lifecycle method to handle setting state in the context file. 
+
+state ={
+    products:[],
+
+
+// Create A Lifecycle method to set product state 
+componentDidMount() {
+  this.setProducts();
+}
+
+
+  // Create an array and loop through the product list to insert items into the array, we would want to get new set of values 
+  setProducts = () => { 
+    let tempProducts = []; 
+    storeProducts.forEach(item => {
+      const singleItem = {...item};
+      tempProducts = [...tempProducts, singleItem]
+    });
+    this.setState(()=> {
+      return { products: tempProducts}
+    })
+  }
+
+
+  //<----- WORK ON PRODUCT DETAILS --------------> 
+  1. 
+  2. Using Props on Styled Components 
+  background: ${props => 
+    props.cart ? "var(--mainYellow)" : "var(--lightBlue)"};
+  color: var(--mainBlue);
