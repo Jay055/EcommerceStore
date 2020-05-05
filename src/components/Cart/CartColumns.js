@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+// Columns in the Cart for Large Screens 
 export default function CartColumns() {
   return (
    
