@@ -58,3 +58,9 @@ componentDidMount() {
   background: ${props => 
     props.cart ? "var(--mainYellow)" : "var(--lightBlue)"};
   color: var(--mainBlue);
+
+Create functions to get the properties 
+
+
+
+/// <__--- CREATE OUR MODAL ----------------> 

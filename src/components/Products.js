@@ -12,20 +12,25 @@ export default class Products extends Component {
     return (
       <ProductWrapper className="col-9 mx-auto ">
        <div className="card">
-            {/* Get the Functions from Context Store */}
-         <ProductConsumer>
-            {/* Get access to context through value function */}
-           {(value)=>{}}
+            {/* Use Product Consumer to share Global Data from context store using the parameter value as reference  */}
+       <ProductConsumer>
+         {(value) => {
+           return (
+
+         
          <div 
          className="img-container p-5" 
-         onClick={()=> 
-          console.log(123)} >
+         onClick={()=> value.handleDetail(id)}>
            <Link to="/details">
              <img src={img} alt="product" className="card-img-top"/>
            </Link>
                      
                                  {/* Button on the card for the logic between showing "Add to cart" and "in Cart" using disabled property  */}
-           <button className="cart-btn" disabled={inCart? true : false} onClick={()=>(console.log('added to the cart'))}>
+           <button className="cart-btn" disabled={inCart? true : false} 
+           onClick={()=> {value.addToCart(id);
+            value.openModal(id);
+          
+          }}>
            
            {inCart ? (
              <p className="text-capitalize mb-0" disabled>
@@ -45,7 +50,8 @@ export default class Products extends Component {
 
           
          </div>
-         </ProductConsumer>
+           )}}
+        </ProductConsumer>
        </div>
       </ProductWrapper>
     )
