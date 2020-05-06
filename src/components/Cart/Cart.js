@@ -28,7 +28,9 @@ export default class Cart extends Component {
                   
                     {/* Pass value as props to CartList */}
                   <CartList value={value}/>
-                  <CartTotals value={value} /> 
+                  <CartTotals value={value} 
+                  history={this.props.history}
+                  /> 
 
                </React.Fragment>
                 )
