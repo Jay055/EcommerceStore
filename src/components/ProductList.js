@@ -3,6 +3,7 @@ import Title from './Title';
 import {storeProducts} from '../data';
 import { ProductConsumer } from '../context';
 import Product from './Products';
+import styled from 'styled-components';
 
 export default class ProductList extends Component {
   state = {
@@ -13,7 +14,7 @@ export default class ProductList extends Component {
     // console.log(this.state.products);
     return (
       <React.Fragment>
-    <div className="py-5">
+    <ProductWrapper className="py-5">
     <div className="container">
       <Title name="Our" title="products" />
     
@@ -31,9 +32,13 @@ export default class ProductList extends Component {
     </div>
     </div>
 
-    </div>
+    </ProductWrapper>
         </React.Fragment>
         // <Product />
     )
   }
 }
+
+
+//
+const ProductWrapper = styled.section``;

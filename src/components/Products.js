@@ -10,7 +10,7 @@ export default class Products extends Component {
   render() {
     const {id, title, img, price, inCart} = this.props.product;
     return (
-      <ProductWrapper className="col-9 mx-auto ">
+      <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
        <div className="card">
             {/* Use Product Consumer to share Global Data from context store using the parameter value as reference  */}
        <ProductConsumer>
