@@ -66,3 +66,16 @@ body {
   font-size: 1.2rem; 
   color: var(--mainYellow); 
 }
+
+.navbar-dark .navbar-brand {
+  height: 50px;
+}
+
+.img-container {
+  height: 335px;
+}
+
+.card-footer {
+  padding: none;
+  padding-top: 15px;
+}

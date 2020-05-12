@@ -9,9 +9,9 @@ export default function CartTotals({value, history}) {
 
   return (
     <React.Fragment>
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
-          <div className="col-10 mt-2 ml-sm-5 ml-md-auto.col-sm-8 text-capitalize text-right">
+          <div className="col-11 mt-2 ml-sm-5 ml-md-auto.col-sm-8 text-capitalize text-right">
             <Link to="/">
               <button className="btn btn-outline-danger text-uppercase mb-3 px-5" type="button"
               onClick={() => clearCart()}>
@@ -19,17 +19,17 @@ export default function CartTotals({value, history}) {
               </button>
             </Link>
             <h5>
-              <span className="text-title">
+              <span>
                 subtotal: </span>
                 <strong> $ {cartSubTotal}</strong>
             </h5>
             <h5>
-              <span className="text-title">
+              <span>
                 tax: </span>
                 <strong> $ {cartTax}</strong>
             </h5>
             <h5>
-              <span className="text-title">
+              <span>
                 total: </span>
                 <strong> $ {cartTotal}</strong>
             </h5>

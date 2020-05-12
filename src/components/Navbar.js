@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../logo.svg';
+import logo from '../home.png';
 // styled components 
 import styled from "styled-components";
 import {ButtonContainer} from './button';
@@ -11,7 +11,7 @@ import {ButtonContainer} from './button';
 export default class Navbar extends Component {
   render() {
     return (
-      <NavWrapper className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
+      <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
         {/* www.iconfinder.com */}
         <Link to="/" className="nav-item">
         {/* FANCYSOLES */}
